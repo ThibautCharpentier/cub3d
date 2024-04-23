@@ -38,7 +38,7 @@ for the floor or the ceiling we have to specify the RGB (0, 255) color. There ar
 
 This project contains a **libft** folder which is a library that we had to create as the first 42 school project. This folder also includes files corresponding to the following 42 school project: **ft_printf** and **get_next_line**.
 
-The **libmlx** is the MiniLibX library. It is a tiny graphics library which allows us to do the most basic things for rendering something in screen. The **libmlx_mac** is the version for Mac OS.
+The **libmlx** folder is the MiniLibX library. It is a tiny graphics library which allows us to do the most basic things for rendering something in screen. The **libmlx_mac** folder is the version for Mac OS.
 
 There is also a **map** folder which contains **.cub** files we can use as a first argument for running the program.
 
