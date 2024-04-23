@@ -49,27 +49,27 @@ LIBMLX = libmlx
 LIBFT_AR = libft/libft.a 
 LIBMLX_AR = ${LIBMLX}/libmlx.a
 
-INCLUDE_HOME = -Ilibft -I/usr/include -Ilibmlx
-LES_LIBS_HOME = -Llibft -lft -Llibmlx -lmlx -L/usr/lib -lXext -lX11 -lm -lz
+INCLUDES_HOME = -Ilibft -I/usr/include -Ilibmlx
+LIBS_HOME = -Llibft -lft -Llibmlx -lmlx -L/usr/lib -lXext -lX11 -lm -lz
 
-INCLUDE_42 = -Ilibft -Ilibmlx_mac
-LES_LIBS_42 = -Llibft -lft -Llibmlx_mac -lmlx -framework OpenGL -framework AppKit
+INCLUDES_42 = -Ilibft -Ilibmlx_mac
+LIBS_42 = -Llibft -lft -Llibmlx_mac -lmlx -framework OpenGL -framework AppKit
 
 CC = gcc
 CFLAGS = -Wall -Wextra -Werror -O2
 
 %.o: %.c ${HDR} ${HDR_BONUS} ${LIBFT_AR} ${LIBMLX_AR} Makefile
-	${CC} ${CFLAGS} -c $< -o $@ ${INCLUDE_HOME}
+	${CC} ${CFLAGS} -c $< -o $@ ${INCLUDES_HOME}
 
 all: libft libmlx ${NAME}
 
 ${NAME}: ${OBJS}
-	${CC} ${CFLAGS} -o ${NAME} ${OBJS} ${LES_LIBS_HOME}
+	${CC} ${CFLAGS} -o ${NAME} ${OBJS} ${LIBS_HOME}
 
 bonus: libft libmlx ${NAME_BONUS}
 
 ${NAME_BONUS}: ${OBJS_BONUS}
-	${CC} ${CFLAGS} -o ${NAME_BONUS} ${OBJS_BONUS} ${LES_LIBS_HOME}
+	${CC} ${CFLAGS} -o ${NAME_BONUS} ${OBJS_BONUS} ${LIBS_HOME}
 
 libft:
 	make -C libft
