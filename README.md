@@ -61,6 +61,7 @@ LIBS_42 = -Llibft -lft -Llibmlx_mac -lmlx -framework OpenGL -framework AppKit
 ```
 You must choose the right configuration according to the structure of your system and your OS (perhaps the two possible configurations above will not correspond). I recommend you to follow the link I wrote above.
 If you use **libmlx**, the right ```-I/usr/*/include``` and ```-L/usr/*/lib``` should match with the first line ```INC=/usr/*/include``` of the ```libmlx/Makefile.gen``` file.
+Otherwise, if you use **libmlx_mac**, you have to change the LIBMLX parameter with this line ```LIBMLX = libmlx_mac```.
 
 If everything looks correct, use ```make``` command to compile the project then run the program with:
 ```
