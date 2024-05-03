@@ -1,5 +1,9 @@
 # cub3d
 
+<p align="center">
+  <img src="https://github.com/ThibautCharpentier/cub3d/blob/main/gif/cub3d.gif" width="480"/>
+</p>
+
 cub3d is a 42 school team project where we have to create a 3D graphical representation of a maze using a first person view. We have to implement raycasting in the style of the famous [Wolfenstein 3D game](http://users.atw.hu/wolf3d/).
 
 ## Status
