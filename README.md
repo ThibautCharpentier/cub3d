@@ -89,5 +89,5 @@ In the ```map/map_bonus.ber``` and ```map/map2_bonus.ber``` files, doors are rep
 If you have a QWERTY keyboard you can change keys in ```srcs/cub3d.h``` and in ```srcs_bonus/cub3d_bonus.h```. You also can change the MOVESPEED or ROTSPEED parameters if your game is too slow or too fast.
 ***
 Made by:
-* Ismérie George: <ismerie.george@gmail.com>
+* Ismérie George: [@Ismerie](https://github.com/Ismerie) <ismerie.george@gmail.com>
 * Thibaut Charpentier: <thibaut.charpentier42@gmail.com>
